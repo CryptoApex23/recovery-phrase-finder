@@ -72,7 +72,7 @@ def find_correct_mnemonic(partial_mnemonic, target_address, wordlist):
                 if get_eth_address_from_mnemonic(mnemonic) == target_address:
                     write_result_to_file(mnemonic, target_address)
                     return mnemonic
-            except:
+            except Exception:
                 continue
     return None    
 
@@ -95,7 +95,6 @@ def write_result_to_file(mnemonic, address, filename="Result.txt"):
 
 def main():
     print_logo()
-
     while True:
         # Get user inputs
         partial_mnemonic = input("What is the mnemonic phrase (put 'x' where you are missing a word)?\n")
