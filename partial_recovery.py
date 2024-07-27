@@ -29,8 +29,9 @@ $$/   $$/ $$/       $$$$$$$$/ $$/   $$/
 #                             #
 #        CryptoAppex          #
 # ETH Partial Mnemonic Phrase #
-# Recovery Tool               #
-# V0.1                        #
+#        Recovery Tool        #
+#            V0.1             #
+#                             #
 ###############################
     """
     print(logo)
@@ -112,7 +113,6 @@ def main():
             continue
         
         # Load wordlist
-        wordlist_file = "wordlist.txt"
         wordlist = load_wordlist(wordlist_file)
 
         # Find the correct mnemonic

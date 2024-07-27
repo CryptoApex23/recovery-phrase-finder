@@ -1,6 +1,35 @@
 ﻿# Eth Partial Mnemonic Recovery Phrase Finder
 
-![Logo Screenshot](screenshots/screenshot_2.PNG)
+```bash
+  ______   _______   __      __  _______   ________  ______
+ /      \ /       \ /  \    /  |/       \ /        |/      \
+/$$$$$$  |$$$$$$$  |$$  \  /$$/ $$$$$$$  |$$$$$$$$//$$$$$$  |
+$$ |  $$/ $$ |__$$ | $$  \/$$/  $$ |__$$ |   $$ |  $$ |  $$ |
+$$ |      $$    $$<   $$  $$/   $$    $$/    $$ |  $$ |  $$ |
+$$ |   __ $$$$$$$  |   $$$$/    $$$$$$$/     $$ |  $$ |  $$ |
+$$ \__/  |$$ |  $$ |    $$ |    $$ |         $$ |  $$ \__$$ |
+$$    $$/ $$ |  $$ |    $$ |    $$ |         $$ |  $$    $$/
+ $$$$$$/  $$/   $$/     $$/     $$/          $$/    $$$$$$/
+  ______   _______   ________  __    __
+ /      \ /       \ /        |/  |  /  |
+/$$$$$$  |$$$$$$$  |$$$$$$$$/ $$ |  $$ |
+$$ |__$$ |$$ |__$$ |$$ |__    $$  \/$$/
+$$    $$ |$$    $$/ $$    |    $$  $$<
+$$$$$$$$ |$$$$$$$/  $$$$$/      $$$$  \
+$$ |  $$ |$$ |      $$ |_____  $$ /$$  |
+$$ |  $$ |$$ |      $$       |$$ |  $$ |
+$$/   $$/ $$/       $$$$$$$$/ $$/   $$/
+
+###############################
+#                             #
+#        CryptoAppex          #
+# ETH Partial Mnemonic Phrase #
+#        Recovery Tool        #
+#            V0.1             #
+#                             #
+###############################
+```
+
 **Recovery Phrase Finder** is a tool for recovering Ethereum mnemonic phrases. This script attempts to find a valid 12-word mnemonic phrase by filling in placeholders (`x`) and checks if the resulting mnemonic produces a target Ethereum address.
 
 Telegram:
