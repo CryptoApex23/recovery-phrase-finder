@@ -1,0 +1,51 @@
+# Virtual environment
+recover_finder_env/
+.env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Distribution and build directories
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables file
+.env
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Coverage reports
+.coverage
+*.cover
+*.py,cover
+
+# Pytest cache
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Flake8
+.flake8
+
+# Pyre type checker
+.pyre/
