@@ -1,0 +1,5 @@
+Recovered Mnemonic Phrase:
+abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about
+
+Associated Ethereum Address:
+0x9858EfFD232B4033E47d90003D41EC34EcaEda94
