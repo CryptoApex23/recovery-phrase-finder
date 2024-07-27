@@ -22,7 +22,7 @@ $$/   $$/ $$/       $$$$$$$$/ $$/   $$/
 
 ###############################
 #                             #
-#        CryptoAppex          #
+#         CryptoApex          #
 # ETH Partial Mnemonic Phrase #
 #        Recovery Tool        #
 #            V0.1             #
