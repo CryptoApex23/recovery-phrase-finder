@@ -3,6 +3,12 @@
 ![Logo Screenshot](screenshots/screenshot_2.PNG)
 **Recovery Phrase Finder** is a tool for recovering Ethereum mnemonic phrases. This script attempts to find a valid 12-word mnemonic phrase by filling in placeholders (`x`) and checks if the resulting mnemonic produces a target Ethereum address.
 
+Telegram:
+https://t.me/vertexapex_hub
+
+Discord:
+https://discord.gg/P265G7Ex
+
 ## Features
 
 - **Mnemonic Phrase Recovery**: Given a partial mnemonic phrase with placeholders, the tool tries all possible combinations from a word list.
