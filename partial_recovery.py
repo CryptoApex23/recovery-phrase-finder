@@ -57,6 +57,7 @@ def get_eth_address_from_mnemonic(mnemonic):
     account = Account.from_mnemonic(mnemonic)
     return account.address
 
+
 def find_correct_mnemonic(partial_mnemonic, target_address, wordlist):
     mnemo = Mnemonic("english")
     total_combinations = len(wordlist) ** partial_mnemonic.count('x')
@@ -64,12 +65,15 @@ def find_correct_mnemonic(partial_mnemonic, target_address, wordlist):
     with tqdm(total=total_combinations, desc="Processing", unit="mnemonic") as pbar:
         for mnemonic in generate_mnemonic_combinations(partial_mnemonic, wordlist):
             pbar.update(1)
-            if not mnemo.check(mnemonic):
+            try:
+                if not mnemo.check(mnemonic):
+                    continue
+                if get_eth_address_from_mnemonic(mnemonic) == target_address:
+                    write_result_to_file(mnemonic, target_address)
+                    return mnemonic
+            except:
                 continue
-            if get_eth_address_from_mnemonic(mnemonic) == target_address:
-                return mnemonic
-    return None
-    
+    return None    
 
 def validate_mnemonic(phrase):
     words = phrase.split()
@@ -87,19 +91,6 @@ def write_result_to_file(mnemonic, address, filename="Result.txt"):
         file.write(f"{address}\n")
     print(f"Results have been written to {filename}")
     
-def find_correct_mnemonic(partial_mnemonic, target_address, wordlist):
-    mnemo = Mnemonic("english")
-    total_combinations = len(wordlist) ** partial_mnemonic.count('x')
-
-    with tqdm(total=total_combinations, desc="Processing", unit="mnemonic") as pbar:
-        for mnemonic in generate_mnemonic_combinations(partial_mnemonic, wordlist):
-            pbar.update(1)
-            if not mnemo.check(mnemonic):
-                continue
-            if get_eth_address_from_mnemonic(mnemonic) == target_address:
-                write_result_to_file(mnemonic, target_address)
-                return mnemonic
-    return None
 
 def main():
     print_logo()
@@ -125,7 +116,6 @@ def main():
         wordlist = load_wordlist(wordlist_file)
 
         # Find the correct mnemonic
-                # Find the correct mnemonic
         correct_mnemonic = find_correct_mnemonic(partial_mnemonic, target_address, wordlist)
 
         if correct_mnemonic:
